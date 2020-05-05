@@ -39,9 +39,9 @@ class R1(models.Model):
     r1 = models.BigIntegerField()
     r2 = models.ForeignKey(
         "home.R2",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="r1_r2",
     )
 
